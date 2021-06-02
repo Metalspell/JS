@@ -225,7 +225,7 @@ function f15() {
 	let firstNum = document.querySelector('.s-151');
 	let secondNum = document.querySelector('.s-152');
 	let mathSign = document.querySelector('.s-153');
-	let result= null;
+	let result = null;
 
 	switch (mathSign.value) {
 		case '&&':

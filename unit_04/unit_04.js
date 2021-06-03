@@ -180,8 +180,7 @@ document.querySelector('.b-16').onclick = f16;
 
 function f17() {
 	let userSelect = document.querySelector('.s-17');
-	let result = userSelect.options[userSelect.selectedIndex].text;
-	document.querySelector('.out-17').innerHTML = result;
+	document.querySelector('.out-17').innerHTML = userSelect.value;
 }
 
 document.querySelector('.s-17').onchange = f17;
@@ -191,8 +190,7 @@ document.querySelector('.s-17').onchange = f17;
 
 function f18() {
 	let userSelect = document.querySelector('.s-18');
-	let result = userSelect.options[userSelect.selectedIndex].text;
-	document.querySelector('.i-18').value = result;
+	document.querySelector('.i-18').value = userSelect.value;
 }
 
 document.querySelector('.s-18').onchange = f18;

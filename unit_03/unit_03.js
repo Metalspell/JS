@@ -131,12 +131,13 @@ document.querySelector('.b-8').onclick = f8;
 
 function f9() {
 	let userData = document.querySelector('.i-9');
-	if (+userData.value >= 1 && +userData.value <= 32) {
+	let fromStrToNum = +userData.value;
+	if (fromStrToNum >= 1 && fromStrToNum <= 32) {
 		document.querySelector('.out-9').innerHTML = 1;
-	} else if (+userData.value >= 33 && +userData.value <= 43) {
+	} else if (fromStrToNum >= 33 && fromStrToNum <= 43) {
 		document.querySelector('.out-9').innerHTML = 2;
-	} else if (+userData.value >= 44 && +userData.value <= 64) {
-		document.querySelector('.out-9').innerHTML = 1;
+	} else if (fromStrToNum >= 44 && fromStrToNum <= 64) {
+		document.querySelector('.out-9').innerHTML = 3;
 	} else {
 		document.querySelector('.out-9').innerHTML = 0;
 	}
@@ -149,8 +150,7 @@ document.querySelector('.b-9').onclick = f9;
 
 function f10() {
 	let userSelect = document.querySelector('.s-100');
-	let strUser = userSelect.options[userSelect.selectedIndex].text;
-	document.querySelector('.out-10').innerHTML = strUser;
+	document.querySelector('.out-10').innerHTML = userSelect.value;
 }
 
 document.querySelector('.b-10').onclick = f10;
@@ -160,8 +160,7 @@ document.querySelector('.b-10').onclick = f10;
 
 function f11() {
 	let userSelect = document.querySelector('.s-110');
-	let strUser = userSelect.options[userSelect.selectedIndex].text;
-	document.querySelector('.out-11').innerHTML = strUser;
+	document.querySelector('.out-11').innerHTML = userSelect.value;
 }
 
 document.querySelector('.s-110').onchange = f11;

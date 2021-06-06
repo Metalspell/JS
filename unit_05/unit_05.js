@@ -5,7 +5,7 @@
 
 function t1() {
 	let data = '';
-	for (let i = 0; i <= 16; i++) {
+	for (let i = 1; i < 16; i++) {
 		data += i + '_';
 	}
 	document.querySelector('.out-1').innerHTML = data;
@@ -21,7 +21,9 @@ document.querySelector('.b-1').onclick = t1;
 function t2() {
 	let data = '';
 	for (let i = 12; i <= 38; i++) {
-		data += i + '_';
+		if (i % 2 == 0) {
+			data += i + '_';
+		}
 	}
 	document.querySelector('.out-2').innerHTML = data;
 }
@@ -173,7 +175,7 @@ function t10() {
 	let data = '';
 	for (let i = 1950; i <= 1970; i++) {
 		if (i % 2 === 0) {
-			data += i + ' ';
+			data += i + '_';
 		}
 	}
 	document.querySelector('.out-10').innerHTML = data;
@@ -255,7 +257,7 @@ function t15() {
 	let result = '';
 	let counter = 0;
 	for (let i = 10; i >= 0; i--) {
-		result += i +'_'+counter+'_';
+		result += i + '_' + counter + '_';
 		counter++;
 	}
 	document.querySelector('.out-15').innerHTML = result;

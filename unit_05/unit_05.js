@@ -5,7 +5,7 @@
 
 function t1() {
 	let data = '';
-	for (let i = 1; i < 16; i++) {
+	for (let i = 1; i <= 16; i++) {
 		data += i + '_';
 	}
 	document.querySelector('.out-1').innerHTML = data;

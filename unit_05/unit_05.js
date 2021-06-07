@@ -4,11 +4,11 @@
 // Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t1() {
-	let data = '';
-	for (let i = 1; i <= 16; i++) {
-		data += i + '_';
-	}
-	document.querySelector('.out-1').innerHTML = data;
+  let data = '';
+  for (let i = 1; i <= 16; i++) {
+    data += i + '_';
+  }
+  document.querySelector('.out-1').innerHTML = data;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -19,13 +19,13 @@ document.querySelector('.b-1').onclick = t1;
 //Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t2() {
-	let data = '';
-	for (let i = 12; i <= 38; i++) {
-		if (i % 2 == 0) {
-			data += i + '_';
-		}
-	}
-	document.querySelector('.out-2').innerHTML = data;
+  let data = '';
+  for (let i = 12; i <= 38; i++) {
+    if (i % 2 == 0) {
+      data += i + '_';
+    }
+  }
+  document.querySelector('.out-2').innerHTML = data;
 }
 
 document.querySelector('.b-2').onclick = t2;
@@ -36,11 +36,11 @@ document.querySelector('.b-2').onclick = t2;
 // Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t3() {
-	let data = '';
-	for (let i = 25; i >= 7; i--) {
-		data += i + '_';
-	}
-	document.querySelector('.out-3').innerHTML = data;
+  let data = '';
+  for (let i = 25; i >= 7; i--) {
+    data += i + '_';
+  }
+  document.querySelector('.out-3').innerHTML = data;
 }
 
 document.querySelector('.b-3').onclick = t3;
@@ -51,11 +51,11 @@ document.querySelector('.b-3').onclick = t3;
 // от 77 до 35 c шагом 3. Разделитель - знак подчеркивания. Задача решается с помощью цикла.
 
 function t4() {
-	let data = '';
-	for (let i = 77; i >= 35; i -= 3) {
-		data += i + '_';
-	}
-	document.querySelector('.out-4').innerHTML = data;
+  let data = '';
+  for (let i = 77; i >= 35; i -= 3) {
+    data += i + '_';
+  }
+  document.querySelector('.out-4').innerHTML = data;
 }
 
 document.querySelector('.b-4').onclick = t4;
@@ -66,15 +66,15 @@ document.querySelector('.b-4').onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и звездочка (если число нечетное, и две звездочки если четное). Задача решается с помощью цикла.
 
 function t5() {
-	let data = '';
-	for (let i = 1; i <= 17; i++) {
-		if (i % 2 === 0) {
-			data += i + '_**';
-		} else {
-			data += i + '_*';
-		}
-	}
-	document.querySelector('.out-5').innerHTML = data;
+  let data = '';
+  for (let i = 1; i <= 17; i++) {
+    if (i % 2 === 0) {
+      data += i + '_**';
+    } else {
+      data += i + '_*';
+    }
+  }
+  document.querySelector('.out-5').innerHTML = data;
 }
 
 document.querySelector('.b-5').onclick = t5;
@@ -90,12 +90,12 @@ document.querySelector('.b-5').onclick = t5;
 //
 
 function t6() {
-	let data = '';
-	let counter = document.querySelector('.i-6');
-	for (let i = 0; i < counter.value; i++) {
-		data += '******<br>';
-	}
-	document.querySelector('.out-6').innerHTML = data;
+  let data = '';
+  let counter = document.querySelector('.i-6');
+  for (let i = 0; i < counter.value; i++) {
+    data += '******<br>';
+  }
+  document.querySelector('.out-6').innerHTML = data;
 }
 
 document.querySelector('.b-6').onclick = t6;
@@ -108,12 +108,12 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла.
 
 function t7() {
-	let data = '';
-	let counter = document.querySelector('.i-7');
-	for (let i = counter.value; i >= 0; i--) {
-		data += i + '_';
-	}
-	document.querySelector('.out-7').innerHTML = data;
+  let data = '';
+  let counter = document.querySelector('.i-7');
+  for (let i = counter.value; i >= 0; i--) {
+    data += i + '_';
+  }
+  document.querySelector('.out-7').innerHTML = data;
 }
 
 document.querySelector('.b-7').onclick = t7;
@@ -127,13 +127,13 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
-	let data = '';
-	let counter1 = document.querySelector('.i-81');
-	let counter2 = document.querySelector('.i-82');
-	for (let i = counter1.value; i <= counter2.value; i++) {
-		data += i + '_';
-	}
-	document.querySelector('.out-8').innerHTML = data;
+  let data = '';
+  let counter1 = document.querySelector('.i-81');
+  let counter2 = document.querySelector('.i-82');
+  for (let i = counter1.value; i <= counter2.value; i++) {
+    data += i + '_';
+  }
+  document.querySelector('.out-8').innerHTML = data;
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -149,20 +149,20 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
-	let data = '';
-	let counter1 = document.querySelector('.i-91');
-	let counter2 = document.querySelector('.i-92');
+  let data = '';
+  let counter1 = document.querySelector('.i-91');
+  let counter2 = document.querySelector('.i-92');
 
-	if (counter1.value >= 0 && counter2.value >= 0 && counter1.value <= counter2.value) {
-		for (let i = counter1.value; i <= counter2.value; i++) {
-			data += i + '_';
-		}
-	} else if (counter1.value >= 0 && counter2.value >= 0 && counter1.value >= counter2.value) {
-		for (let i = counter2.value; i <= counter1.value; i++) {
-			data += i + '_';
-		}
-	}
-	document.querySelector('.out-9').innerHTML = data;
+  if (counter1.value >= 0 && counter2.value >= 0 && counter1.value <= counter2.value) {
+    for (let i = counter1.value; i <= counter2.value; i++) {
+      data += i + '_';
+    }
+  } else if (counter1.value >= 0 && counter2.value >= 0 && counter1.value >= counter2.value) {
+    for (let i = counter2.value; i <= counter1.value; i++) {
+      data += i + '_';
+    }
+  }
+  document.querySelector('.out-9').innerHTML = data;
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -172,13 +172,13 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель - знак подчеркивания. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
-	let data = '';
-	for (let i = 1950; i <= 1970; i++) {
-		if (i % 2 === 0) {
-			data += i + '_';
-		}
-	}
-	document.querySelector('.out-10').innerHTML = data;
+  let data = '';
+  for (let i = 1950; i <= 1970; i++) {
+    if (i % 2 === 0) {
+      data += i + '_';
+    }
+  }
+  document.querySelector('.out-10').innerHTML = data;
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -192,12 +192,12 @@ document.querySelector('.b-10').onclick = t10;
 //     one_3_4_two_
 
 function t11() {
-	let divs11 = document.querySelectorAll('.div-11');
-	let out = '';
-	for (let i = 0; i < divs11.length; i++) {
-		out += divs11[i].innerHTML + "_"
-	}
-	document.querySelector('.out-11').innerHTML = out;
+  let divs11 = document.querySelectorAll('.div-11');
+  let out = '';
+  for (let i = 0; i < divs11.length; i++) {
+    out += divs11[i].innerHTML + "_"
+  }
+  document.querySelector('.out-11').innerHTML = out;
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -209,10 +209,10 @@ document.querySelector('.b-11').onclick = t11;
 // применить к каждому elem[i].style.background = ‘orange’
 
 function t12() {
-	let elems = document.querySelectorAll('.div-12');
-	for (let i = 0; i < elems.length; i++) {
-		elems[i].style.background = 'orange';
-	}
+  let elems = document.querySelectorAll('.div-12');
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].style.background = 'orange';
+  }
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -221,10 +221,10 @@ document.querySelector('.b-12').onclick = t12;
 // С помощью цикла присвойте всем input .i-13 value равное 1 для первого, 2 для второго и 3 для третьего.
 
 function t13() {
-	let elems = document.querySelectorAll('.i-13');
-	for (let i = 0; i < elems.length; i++) {
-		elems[i].value = i + 1;
-	}
+  let elems = document.querySelectorAll('.i-13');
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].value = i + 1;
+  }
 }
 
 document.querySelector('.b-13').onclick = t13;
@@ -236,14 +236,14 @@ document.querySelector('.b-13').onclick = t13;
 // вывести в .out-14 value выбранного. Проверить выбран ли элемент можно с помощью elem[i].checked.
 
 function t14() {
-	let elems = document.querySelectorAll('.i-14');
-	let result;
-	for (let i = 0; i < elems.length; i++) {
-		if (elems[i].checked) {
-			result = elems[i].value;
-		}
-	}
-	document.querySelector('.out-14').innerHTML = result;
+  let elems = document.querySelectorAll('.i-14');
+  let result;
+  for (let i = 0; i < elems.length; i++) {
+    if (elems[i].checked) {
+      result = elems[i].value;
+    }
+  }
+  document.querySelector('.out-14').innerHTML = result;
 }
 
 document.querySelector('.b-14').onclick = t14;
@@ -254,13 +254,13 @@ document.querySelector('.b-14').onclick = t14;
 // Подсказка (10 - i) + '_' + i + '_'
 
 function t15() {
-	let result = '';
-	let counter = 0;
-	for (let i = 10; i >= 0; i--) {
-		result += i + '_' + counter + '_';
-		counter++;
-	}
-	document.querySelector('.out-15').innerHTML = result;
+  let result = '';
+  let counter = 0;
+  for (let i = 10; i >= 0; i--) {
+    result += i + '_' + counter + '_';
+    counter++;
+  }
+  document.querySelector('.out-15').innerHTML = result;
 }
 
 document.querySelector('.b-15').onclick = t15;

@@ -15,7 +15,7 @@ document.querySelector('.b-1').onclick = f1;
 function f2() {
   let a2 = [[12, 'hi'], [45, 87], [55, 13]];
   document.querySelector('.out-2').innerHTML = a2[0][1];
-  return a1[0][1];
+  return a2[0][1];
 }
 document.querySelector('.b-2').onclick = f2;
 
@@ -245,9 +245,9 @@ let a14 = [
   [3, 4, 5, 6, 7, 8],
   [1, 2]
 ];
-let out = '';
 
 function f14() {
+  let out = '';
   for (let i = 0; i < a14.length; i++) {
     out += a14[i].length + ' ';
   }
@@ -269,10 +269,11 @@ let a15 = [
 ];
 
 function f15() {
-  let maxLength = 0
-  for (let i = 0; i < a14.length; i++) {
-    if (a14[i].length > maxLength) {
-      maxLength = a14[i].length
+  let out = '';
+  let maxLength = 0;
+  for (let i = 0; i < a15.length; i++) {
+    if (a15[i].length > maxLength) {
+      maxLength = a15[i].length
     }
   }
   out += maxLength + ' ';

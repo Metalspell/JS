@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="general-wrapper">
+    <header class="header">
+      <!-- <h3 class="city-name"></h1> -->
+      <select class="city-id" onchange="citySelect()">
+        <option value="709930" selected="selected">Dnipro</option>
+        <option value="693796">Synel’nykove</option>
+        <option value="87968">Gdansk</option>
+        <option value="703448">Kyiv</option>
+        <select>
+    </header>
+    <main class="main">
+      <section class='first-block'>
+        <article class="temperature"></article>
+        <article class="temperature max"></article>
+        <article class="temperature min"></article>
+        <article class="temperature feel"></article>
+      </section>
+      <section class='second-block'>
+        <article class="clouds"></article>
+        <article class="visibility"></article>
+        <article class="wind-speed"></article>
+        <article class="humidity"></article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

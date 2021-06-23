@@ -1,70 +1,83 @@
 html,
 body {
-  font-family: serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 body {
-  margin: 20px;
+  height         : 100vh;
+  margin         : 20px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
 }
 
 .general-wrapper {
-  display        : flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width           : 90%;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  flex-direction  : column;
+  background-color: #03a9f4;
+  margin          : 0 auto;
+  border-radius   : 50px;
+  height: 100vh;
 }
 
-.header {
-  display: flex;
-  width: 40vw;
-  justify-content: center;
-  font-size: 4vw;
+.city-id {
+  width        : 32vw;
+  height       : 6vh;
+  border-radius: 20px;
+  border       : none;
+  font-size    : 2vw;
+  margin-top   : 2vw;
 }
 
 .main {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  border-radius: 10px;
-  margin-top: 2vh;
-}
-
-.first-block,
-.second-block {
-  width: 48%;
-  display: flex;
+  display       : flex;
   flex-direction: column;
+  align-items   : center;
+  width         : 90%;
+}
+
+.clouds-icon img {
+  width: 15vw;
+}
+
+.clouds {
+  color    : #fefefe;
+  font-size: 5vw;
+}
+
+.clouds span {
+  text-transform: capitalize;
+}
+
+.main-info {
+  display        : flex;
   justify-content: space-around;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50px;
+  width          : 100%;
+  margin-top     : 3vw;
+  flex-wrap      : wrap;
 }
 
-.first-block {
-  background-image: url(./image/airfares_2.jpg.crdownload);
+.m-b {
+  margin-bottom: 3vw;
 }
 
-section article {
-  background-position-x: right;
-}
-
-.second-block {
-  background-image: url(./image/unnamed.jpg);
+.main-info article {
+  color    : #fefefe;
+  font-size: 1.5vw;
 }
 
 article {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
-  text-align: center;
-  line-height: 2;
-  color:#99ef0b;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  justify-content: center;
+  min-width: 300px;
 }
 
-.span {
-  font-size: 3vw;
-  font-weight: bold;
-  text-transform: capitalize;
+article span {
+  margin-top: 1vw;
+  font-size : 3vw;
 }

@@ -178,7 +178,8 @@ document.querySelector('.b-10').addEventListener('click', () => {
 });
 
 // Task 11
-//При нажатии .b-11 выполняете функцию f11. Функция должна c помощью for in перебрать объект a11 и вывести в out-11 только те значения, которые больше 10. Вывод - через пробел.
+//  При нажатии .b-11 выполняете функцию f11. Функция должна c помощью for in перебрать объект a11 и вывести в out-11 только те значения, 
+//  которые больше 10. Вывод - через пробел.
 
 let a11 = {
   one: 11,
@@ -188,13 +189,15 @@ let a11 = {
 }
 
 function f11() {
-  let max = 0;
+  let out = '';
+  let max = 10;
   for (key in a11) {
     if (a11[key] > max) {
-      max = a11[key];
+      console.log(a11[key])
+      out += a11[key]+ ' ';
     }
   }
-  document.querySelector('.out-11').innerHTML = max;
+  document.querySelector('.out-11').innerHTML = out;
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);

@@ -245,21 +245,22 @@ document.querySelector('.b-13').onclick = () => {
 }
 
 // Task 14 ============================================
-/*  Дан массив a14 = ['c', 'C', 'd', 'e', 'E']. С помощью метода includes функция t14 должна определить, есть ли значение из переменной a14_sym в массиве. Если да - то функция возврaщает true, если нет false. Обратите внимание, функция должна искать независимо от регистра. Т.е. если в a14_sym будет строка 'd' то возвратить true, однако и на строку 'D' тоже возвратить true. */
+// Дан массив a14 = ['c', 'C', 'd', 'e', 'E']. С помощью метода includes функция t14 должна определить, есть ли значение из переменной a14_sym в массиве. 
+// Если да - то функция возврaщает true, если нет false. Обратите внимание, функция должна искать независимо от регистра. 
+// Т.е. если в a14_sym будет строка 'd' то возвратить true, однако и на строку 'D' тоже возвратить true. */
 
 let a14 = ['c', 'C', 'd', 'e', 'E'];
-let a14_sym = 'e';
+let a14_sym = 'h';
+
 
 function t14() {
   let lowCase = a14_sym.toLowerCase();
   let upCase = a14_sym.toUpperCase();
-  a14 = a14.map(item => {
-    if (lowCase === item || upCase === item) {
-      return true;
-    } esle {
-      return false;
-    }
-  })
+  if (a14.includes(lowCase) || a14.includes(upCase)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 document.querySelector('.b-14').onclick = () => {

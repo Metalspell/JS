@@ -251,10 +251,15 @@ let a14 = ['c', 'C', 'd', 'e', 'E'];
 let a14_sym = 'e';
 
 function t14() {
+  let lowCase = a14_sym.toLowerCase();
+  let upCase = a14_sym.toUpperCase();
   a14 = a14.map(item => {
-    return item.toLowerCase();
-  });
-  return a14.includes(a14_sym);
+    if (lowCase === item || upCase === item) {
+      return true;
+    } esle {
+      return false;
+    }
+  })
 }
 
 document.querySelector('.b-14').onclick = () => {

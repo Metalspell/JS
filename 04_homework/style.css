@@ -86,19 +86,20 @@ article span {
   font-size : 3vw;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .city-id {
-    width    : 68vw;
-    font-size: 6vw;
+    width     : 68vw;
+    font-size : 6vw;
+    margin-top: 6vw;
   }
 
   .clouds-icon img {
-    width: 40vw;
+    width: 30vw;
   }
 
   article {
     margin-top: 3vw;
-    min-width : 180px;
+    min-width : 30vw;
   }
 
   article span {
@@ -107,7 +108,7 @@ article span {
   }
 
   .main-info {
-    margin-top: 14vw;
+    margin-top: 8vw;
   }
 
   .main-info article {

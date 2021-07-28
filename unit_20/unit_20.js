@@ -35,7 +35,6 @@ function t3(event) {
 
 document.querySelector('.i-3').onkeypress = t3;
 
-
 // Task 4 ============================================
 /*  Дан input .i-4. Напишите функцию t4, которая выводит в .out-4 только символы в нижнем регистре. Т.е. ввели ab4Bci в out-4 получаем ab4ci. */
 
@@ -73,7 +72,6 @@ function t6(event) {
 }
 
 document.querySelector('.i-6').onkeypress = t6;
-
 
 // Task 7 ============================================
 /*  Дан input .i-7. Напишите функцию t7, которая выводит в .out-7 случаный символ из массива a7 при каждом вводе символа. */
@@ -114,7 +112,6 @@ function t8(event) {
 
 document.querySelector('.i-8').onkeydown = t8;
 
-
 // Task 9 ============================================
 /* Дан input .i-9. Напишите функцию t9, выводит в .out-9 количество (число) нажатых клавиш стрелка вниз. */
 
@@ -130,7 +127,6 @@ function t9(event) {
 }
 
 document.querySelector('.i-9').onkeydown = t9;
-
 
 // Task 10 ============================================
 /*  Дан input .i-10 и блок .block-10. Добавьте событие на input, при нажатии клавиш стрелка вправо и стрелка влево увеличивать ширину блока. 
@@ -166,9 +162,21 @@ document.querySelector('.i-10').onkeydown = t10;
 */
 
 function t11(event) {
-  console.log(event.key);
+  let arr = document.querySelectorAll('.keyboard');
+  arr.forEach(element => {
+    element.classList.remove('active');
+  });
 
+  let newArr = document.querySelectorAll('.keyboard');
+  newArr.forEach(element => {
+    if (element.innerHTML.toLowerCase() == event.key.toLowerCase()) {
+      element.classList.add('active');
+    }
+  });
+  if (event.key === ' ') {
+    document.querySelector(`.keyboard[data="space"]`).classList.add('active');
+  } else if (event.key === 'Control') {
+    document.querySelector(`.keyboard[data="ctrl"]`).classList.add('active');
+  }
 }
-
 document.querySelector('.i-11').onkeydown = t11;
-
